@@ -1,0 +1,215 @@
+* {margin: 0; padding: 0;}
+/* 메인 폰트 설정 */
+body{
+    background-color:#eeeeee;
+    font-family: Montserrat, "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+/* container 1 , 2 모두 패딩 100px 0 100px로 내용들이 접혀있을 때 모두 같은 크기를 유지하도록 함*/
+/* width 는 100% %사용으로 페이지 사이즈 변화에도 문제없게 */
+/* 배경색 바꾸기 위해 container로 나눔  */
+.container1{display: block;
+    padding: 100px 0px 100px;
+    background-color: #EEEEEE;
+    color: #222831;
+    width: 100%; 
+}
+
+.container2{
+    display: block;
+    padding: 100px 0px 100px;
+    background-color: #222831;
+    color:#eeeeee;
+    width: 100%;
+}
+
+.container3{
+    display: block;
+    padding: 100px 0px 100px;
+    background-color: #4f8a8b;
+    color: #eeeeee;
+    width: 100%;
+}
+
+.container4{
+    display: block;
+    padding: 100px 0px 100px;
+    background-color: #fbd46d;
+    color: #fff;
+    width: 100%;
+}
+
+.container5{
+    display: block;
+    padding: 10px 0px 10px;
+    width: 100%;
+}
+
+/* container 안에 box를 넣어 배경과 내용이 따로 움직일 수 있도록 구성  */
+/* margin을 auto로 주어 페이지 크기 변화에도 알만게 변형 */
+.box {
+    margin-left: auto; margin-right: auto;
+    width: 960px; height: auto;
+}
+
+/* 링크시 글자가 파란색으로 변하는 것을 막기위해 text-decoration: none으로 흰 배경에는 a2를 써 글자를 검정으로 검은 배경에는 a1을 써 글자를 흰색으로 바꿈 */
+.a1 {text-decoration: none; color : #fff;}
+.a2 {text-decoration: none; color : #222831;}
+/* span과 p는 font size 15 px로 지정 */
+span, p {font-size: 15px;}
+
+/* copyright만 글씨 크기 작게 */
+.footer {
+    font-size: small;
+}
+/* 글자 align을 위해 center left right로 나눔 */
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+/* 포트폴리오 섹션에서 사용하는 원형이미지를 가로에 3개씩 배열하기 위해서 33.33%로 width를 설정  */ 
+.portfolio_box {
+    right: 0;
+    display: block;
+    width: 33.333333%;
+    float: left;}
+
+/* 수업시간에 배운 row col을 활용해서 About me Section을 양 옆으로 배치 하였으며,
+row : after :before는 포트폴리오 Section에서 사진들의 배치가 원활하게 되지 않아 표처럼 배열하기 위해 display: table 사용 */
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row:after {clear: both;}
+
+.row{position: relative;
+    margin-left: -15px;
+    margin-right: -15px;}
+
+.col{margin-left: 15%;
+    display: block;
+    width: 33.33333333%;
+    position: relative;
+    float: left;
+}
+
+h2{font-size: 4em; cursor: pointer;}
+
+/* header에 사용되는 이미지 버튼을 상단 좌측과 우측에 고정하기 위해서 스타일 적용
+z-index를 적용해서 맨 위에 있을 수 있도록 했음 */
+.header_fixed { position :fixed;
+    top : 0px;
+    z-index: 15;}
+
+/* header에 사용되는 이미지 버튼을 상단 우측에 고정하기 위해서 스타일 적용 */ 
+.button_1{
+    position :fixed;
+    width:40px;
+    top : 10px;
+    right : 20px;}
+
+/*상단 좌측에 고정 */
+.button_2{
+    position :fixed;
+    width:40px;
+    top : 10px;
+    left : 20px;}
+        
+/* nav 역시 header와 같이 상단에 고정시키 위해서 position :fixed 사용  */
+/* header보다 낮은 z-index적용 width는 100%로 페이지에 맞게 변형 overflow : hidden;적용 */
+.nav_fixed{position :fixed;
+    top : 0px;
+    left:0px;
+    z-index: 10;
+    width: 100%
+}
+
+nav{height: 60px;
+    background: #2b323ddc;
+    overflow : hidden;
+    vertical-align: middle;}
+
+/* nav의 list들은 모양을 없애도 center에 가로로 한줄로 배정 */
+/* list에 글을 올리면 opacity값 조정으로 마우스가 어느 Nav에 위치했는지 알 수 있음 */
+nav ul{list-style-type: none;
+    margin: 0 0;
+    padding-left: 0;
+    text-align: center;}
+
+nav ul li{display: inline-block;
+    line-height: 10px;
+    margin-left: 30px; margin-top: 22px;
+    font-size : 20px;}
+
+nav ul li a{text-decoration: none;
+    color: #fff;
+    vertical-align: middle;}
+
+nav ul li a:hover{opacity: 0.5;}
+
+/* 링크 및 버튼 이미지 수정 css */
+
+h1 { margin-top: 20px; margin-bottom: 20px;
+    text-align: center; 
+    font-size: 100px;
+    font-family: 'Luckiest Guy', cursive;
+}
+h1 a { color: #222831;}
+
+/* hover함수를 이용해서 opacity값에 변화를 주어 마우스가 올라간 것을 알 수 있게 함  */
+
+
+/* img는 hover함수를 이용해서 opacity값에 변화를 주어 마우스가 올라간 것을 알 수 있게 함  */
+img
+{   display: block;
+    margin: 0 auto 0;
+    max-width: 100%;
+    height: auto;             
+}
+
+img:hover {opacity: 0.5;}
+
+/* 포폴 이미지 클릭 시 팝업창처럼 나오는 화면 */
+#note {
+    color: #fff;
+    background-color: #000;
+    /* opacity: 0.9; */
+    box-shadow: 3px 3px 6px #000;
+    padding: 1em 1em 1em 1em;
+    height: 50%;
+    width: 95%;
+    position: absolute;
+    top: 1em;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+  
+#note .header + div {
+background: rgb(255, 255, 255);
+background: rgba(255, 255, 255, 1);
+position: relative;
+font-family: Montserrat, "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+text-align: center;
+top: 30px;
+height: 170px;
+padding: 20px;
+margin: 30px;
+border: 1px solid #4f8a8b;}
+
+#note h2 {
+color: #4f8a8b;
+padding-top: 45px;
+padding-bottom: 20px;
+display: inline-block;
+}
+
+#note a {
+text-decoration: none;
+color: #fff;}
+
+#note .header {
+text-align: right;
+background-color: #000;
+border: none;
+padding: 0 0 0 10px;}
+

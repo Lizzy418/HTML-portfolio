@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lizzy's Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css01.css">
+        <!--FadeToggle, FadeIn/Out을 활용-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- header 안에 nav 삽입-->
+        <header class="header_fixed">
+            <imgbutton class="button_1" id="button1"><img src="minus.png" alt=""></imgbutton>
+            <imgbutton class ="button_2" id = "button2"><img src="plus.png" alt=""></imgbutton>
+        </header>
+            <nav class="nav_fixed" id="navvar">
+                <div>
+                    <ul>
+                        <!-- li 기존 스타일 없애고 a herf 이용, 원하는 위치로 이동하게 함 -->
+                        <!-- li 위에 마우스가 올라가면 opacity 값 줄여서 마우스 위치 인식하게 표현-->
+                        <li><h3><a href="#page">LIZZY</a></h3></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+       
+
+        <!--각 부분들을 section으로 구성, nav에서 a href 준 값으로 이동 가능하게 설정 -->
+        <!--main page-->
+        <section id="page">
+            <!-- container는 width 100%로 Padding을 100px 0 100px 0으로 설정해 페이지 크기를 줄여도 비율을 유지할 수 있도록 함-->
+            <div class="container1">
+                <!-- box는 960px로 설정해 페이지 사이즈를 줄여도 960px까지는 줄어들지 않음. 960px는 내 콘텐츠들을 가장 잘 보여줄 크기라고 생각해 Box로 다시 묶음 -->
+                <div class="box">
+                <!-- style 이용하여 모든 글자 가운데 배치 -->
+                <div class="text-center">
+                    <h1><a href="#page" class="a2">Lizzy</a></h1>
+                    <!-- nav 버튼 활용해서 이동 가능 -->
+                    <h2 id="lizzy">LEE JIWON</h2>
+                    <hr>
+                    <br>
+                    <!--클릭 시에만 나올 수 있도록 display:none 사용-->
+                    <div id="lizzy2" style="display: none;">
+                        <p>Ajou Univ MEDIA / Programming: HTML, C, C#, C++, Python </p>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!--연혁 ABOUT-->
+        <section id="about">
+            <div class="container2">
+                <div class="box">
+                    <!--ABOUT 클릭 시 펼쳐지게-->
+                    <div class="text-center" id="about_me">
+                        <h2>ABOUT ME</h2>
+                        <hr>
+                        <br>
+                    </div>
+                    <!--row와 col 사용해서 좌/우 연혁 나오게-->
+                    <!--클릭 시에만 나올 수 있도록 display:none 사용-->
+                    <div class="row" id="about_me2" style="display:none;">
+                        <!-- style 이용하여 글짜 왼쪽정렬 -->
+                        <div class="text-left">
+                            <div class="col">
+                                <p>1993.04.18 Born</p>
+                                <p>2000-2006  Element school</p>
+                                <p>2006-2009  Middle school</p>
+                                <p>2009-2012  High school</p>
+                            </div>
+                        
+                            <div class="col">
+                                <p>2012-2017 Ajou Univ Media</p>
+                                <p>2017-2020 HRD Root Consulting</p>
+                                <p>2020 KOSTA IoT SW Programmer Course</p>
+                                <p>2021 KOSTA C# .Net Programmer Course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--포트폴리오-->
+        <section id="portfolio">
+            <div class="container3">
+                <div class="box">
+                    <!--Portfolio 클릭 시 펼쳐지게-->
+                    <div class="text-center">
+                        <h2 id="portfolio2">PORTFOLIO</h2>
+                        <hr>
+                        <br>
+                    </div>
+                    <!--클릭 시에만 나올 수 있도록 display:none 사용-->
+                    <div class="row" id="portfolio3" style="display:none;">
+                        <div class="portfolio_box">
+                            <br>
+                            App Inventor - What should I eat today? <br><br>
+                            <!-- 이미지 위에 마우스를 올리면 opacity값을 줄여 어떤 위치에 있는지 알 수 있도록 함 -->
+                            <a href="https://drive.google.com/file/d/1txdVUPhA-j6WQokqtbCOmMImH3vz1W7J/view?usp=sharing" target="_blank">
+                                <img src="profile_app.png" class="imgClick" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio_box">
+                            <br>
+                            HTML - Portfolio <br><br>
+                            <!-- 이미지 위에 마우스를 올리면 opacity값을 줄여 어떤 위치에 있는지 알 수 있도록 함 -->
+                            <img src="profile_port.png" class="imgClick" alt="">
+                            
+                        </div>
+                        <div class="portfolio_box">
+                            <br>
+                            HTML(Vue.js) - To Do List <br><br>
+                            <!-- 코드/사이트 뷰 선택 창 팝업 -->
+                            <img src="profile_todo.png" class="imgClick_pop" alt="">
+                        </div>
+                        <div class="portfolio_box">
+                            <br>
+                            C# - Ice cream Order <br><br>
+                            <a href="https://github.com/Lizzy418/Winform" target="_blank">
+                                <img src="profile_ice.png" class="imgClick" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio_box">
+                            <br>
+                            C# - My Ticket Book <br><br>
+                            <a href="https://github.com/Lizzy418/ASP.NET" target="_blank">
+                                <img src="profile_ticket.png" class="imgClick" alt="">
+                            </a>
+                        </div>
+                        <div class="portfolio_box">
+                            <br>
+                            Python - My LED Home <br><br>
+                            <a href="https://github.com/Lizzy418/RaspberryPi_IoT" target="_blank">
+                                <img src="profile_led.png" class="imgClick" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact-->
+        <section id="contact">
+            <div class="container4">
+                <div class="box">
+                    <div class="text-center">
+                        <h2 id="contact2">CONTACT ME</h2>
+                        <hr>
+                        <br>
+                    </div>
+                    <!--클릭 시에만 나오게 display:none 사용-->
+                    <div id="contact3" style="display:none;">
+                        <!-- style 이용하여 글자 오른쪽 배치 -->
+                        <div class="text-right">
+                            <!-- 관련 페이지로 이동. 구글맵에서 약식 주소를 가져옴-->
+                            <span>010 - 6425 - 9418</span>
+                            <br />
+                            <span><a href="mailto:delena12@naver.com" class = "a1">delena12@naver.com</a></span>
+                            <br />
+                            <!-- 클릭시 새 윈도우 창 열기-->
+                            <span><a href="#" class="a1" onclick="window.open('https://goo.gl/maps/cGHKaCBPFLNgu5P48', '','width=960px, height=480px'); return false;">570, Hogye 2-dong, Dongan-gu, Anyang-si, Gyeonggi-do, Korea</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <section id="page">
+            <div class="container5">
+                <div class="box">
+                <!-- style 이용하여 글자 가운데 배치 -->
+                <div class="text-center">
+                    <p class="footer">Copyrightⓒ <a href="mailto:delena12@naver.com" class="a2">Lizzy</a> All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- 포트폴리오 이미지 클릭 시 -->
+        <script src="script2.js"></script> 
+    </body>
+</html>
