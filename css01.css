@@ -61,6 +61,7 @@ span, p {font-size: 15px;}
 /* copyright만 글씨 크기 작게 */
 .footer {
     font-size: small;
+    height: 20px;
 }
 /* 글자 align을 위해 center left right로 나눔 */
 .text-center {text-align: center;}
