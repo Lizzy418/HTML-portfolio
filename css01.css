@@ -79,7 +79,6 @@ row : after :before는 포트폴리오 Section에서 사진들의 배치가 원�
 .row:before, .row:after {
     content: " ";
     display: table;
-    table-layout: fixed;
 }
 .row:after {clear: both;}
 
