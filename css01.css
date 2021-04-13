@@ -71,7 +71,7 @@ span, p {font-size: 15px;}
 .portfolio_box {
     right: 0;
     display: block;
-    width: 33.333333%;
+    width: 33%;
     float: left;}
 
 /* 수업시간에 배운 row col을 활용해서 About me Section을 양 옆으로 배치 하였으며,
