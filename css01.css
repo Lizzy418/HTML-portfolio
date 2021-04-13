@@ -67,14 +67,14 @@ span, p {font-size: 15px;}
 .text-left {text-align: left;}
 .text-right {text-align: right;}
 
-/* 포트폴리오 섹션에서 사용하는 원형이미지를 가로에 3개씩 배열하기 위해서 33.33%로 width를 설정  */ 
+/* 포트폴리오 섹션에서 사용하는 원형이미지를 가로에 3개씩 배열하기 위해서 30%로 width를 설정  */ 
 .portfolio_box {
     right: 0;
     display: block;
-    width: 33%;
+    width: 30%;
     float: left;}
 
-/* 수업시간에 배운 row col을 활용해서 About me Section을 양 옆으로 배치 하였으며,
+/* row col을 활용해서 About me Section을 양 옆으로 배치 하였으며,
 row : after :before는 포트폴리오 Section에서 사진들의 배치가 원활하게 되지 않아 표처럼 배열하기 위해 display: table 사용 */
 .row:before, .row:after {
     content: " ";
@@ -88,7 +88,7 @@ row : after :before는 포트폴리오 Section에서 사진들의 배치가 원�
 
 .col{margin-left: 15%;
     display: block;
-    width: 33%;
+    width: 30%;
     position: relative;
     float: left;
 }
