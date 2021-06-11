@@ -1,3 +1,23 @@
+//프로필 프로그레스 바 애니메이션(각 프로그래밍 언어 스킬들 그래프로 보여주는 부분)
+function barAnimation() {
+    $(".gauge").each(function () {
+        var $this = $(this);
+        var per = $this.attr("per");
+        // $this.css("width", per + "%");
+        // 애니메이션
+        if($("#lizzy2").css("display") != "none") {
+            $this.animate({
+                width: per + "%"
+            });
+        }             
+        else {
+            $this.animate({
+                width: "10%"
+            });
+        }           
+    });
+}
+
 // 왼쪽 버튼 클릭시 숨겨져 있는 모든 내용들이 나오거나 나온 모든 내용들을 숨길 수 있도록 함수 설정.     
 $(document).ready(function () {
     $("#button2").click(function () {
@@ -15,6 +35,7 @@ $(document).ready(function () {
             $("#about_me2").fadeIn("slow");
             $("#portfolio3").fadeIn("slow");
             $("#contact3").fadeIn("slow");
+            barAnimation(); //버튼 클릭시에도 애니메이션 실행되게
         }         
     });
 });
@@ -52,25 +73,10 @@ $(document).ready(function () {
     });
 }); 
 
-//각 프로그래밍 언어 스킬들 그래프로 보여주는 부분
+//이름 클릭 시 애니메이션 실행
 $(document).ready(function () {
     $("#lizzy").click(function () {
-        $(".gauge").each(function () {
-            var $this = $(this);
-            var per = $this.attr("per");
-            // $this.css("width", per + "%");
-            // 애니메이션
-            if($("#lizzy2").css("display") != "none") {
-                $this.animate({
-                    width: per + "%"
-                });
-            }             
-            else {
-                $this.animate({
-                    width: "10%"
-                });
-            }           
-        });
+        barAnimation();
     });
 });
 
