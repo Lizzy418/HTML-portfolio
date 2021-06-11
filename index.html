@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <!-- 반응형 웹 설정 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Lizzy's Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css01.css">
+        <link rel="stylesheet" href="css01 copy.css">
         <!--FadeToggle, FadeIn/Out을 활용-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
         <script src="script.js" type="text/javascript"></script>
     </head>
     <body>
@@ -25,7 +29,7 @@
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
-            </nav>
+            </nav>        
         <!--각 부분들을 section으로 구성, nav에서 a href 준 값으로 이동 가능하게 설정 -->
         <!--main page-->
         <section id="page">
@@ -42,8 +46,28 @@
                     <br>
                     <!--클릭 시에만 나올 수 있도록 display:none 사용-->
                     <div id="lizzy2" style="display: none;">
-                        <p>Ajou Univ MEDIA / Programming: HTML, JavaScript, C, C#, Python, ms-SQL </p>
-                        <p>Engineer Information Processing</p>
+                        <p>Ajou Univ MEDIA / Programming: HTML, C, C#, C++, Python </p>
+                        <br><br><br>
+                        <span class="language">HTML</span>
+                        <span class="progressbar">
+                            <span class="gauge" per="95">95% &nbsp;&nbsp;</span>                         
+                        </span> 
+                        <span class="language">C</span>
+                        <span class="progressbar">
+                            <span class="gauge" per="85">85% &nbsp;&nbsp;</span>
+                        </span>
+                        <span class="language">C#</span>
+                        <span class="progressbar">
+                            <span class="gauge" per="90">90% &nbsp;&nbsp;</span>
+                        </span> 
+                        <span class="language">C++</span>
+                        <span class="progressbar">
+                            <span class="gauge" per="70">70% &nbsp;&nbsp;</span>
+                        </span> 
+                        <span class="language">Python</span>
+                        <span class="progressbar">
+                            <span class="gauge" per="80">80% &nbsp;&nbsp;</span>
+                        </span>
                     </div>
                 </div>
               </div>
@@ -70,6 +94,7 @@
                                 <p>2006-2009  Middle school</p>
                                 <p>2009-2012  High school</p>
                             </div>
+
                             <div class="col">
                                 <p>2012-2017 Ajou Univ Media</p>
                                 <p>2017-2020 HRD Root Consulting</p>
@@ -104,13 +129,14 @@
                         <div class="portfolio_box">
                             <br>
                             HTML - Portfolio <br><br>
+                            <!-- 이미지 위에 마우스를 올리면 opacity값을 줄여 어떤 위치에 있는지 알 수 있도록 함 -->
                             <a href="https://github.com/Lizzy418/HTML-portfolio" target="_blank">
                                 <img src="profile_port.png" class="imgClick" alt="">
-                            </a>
+                            </a>                            
                         </div>
                         <div class="portfolio_box">
                             <br>
-                            Vue.js - To Do List <br><br>
+                            HTML(Vue.js) - To Do List <br><br>
                             <!-- 코드/사이트 뷰 선택 창 팝업 -->
                             <img src="profile_todo.png" class="imgClick_pop" alt="">
                         </div>
@@ -165,7 +191,7 @@
             </div>
         </section>
         <!-- footer -->
-        <section id="footer">
+        <section id="page">
             <div class="container5">
                 <div class="box">
                 <!-- style 이용하여 글자 가운데 배치 -->
