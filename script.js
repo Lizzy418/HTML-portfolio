@@ -52,7 +52,27 @@ $(document).ready(function () {
     });
 }); 
 
-
+//각 프로그래밍 언어 스킬들 그래프로 보여주는 부분
+$(document).ready(function () {
+    $("#lizzy").click(function () {
+        $(".gauge").each(function () {
+            var $this = $(this);
+            var per = $this.attr("per");
+            // $this.css("width", per + "%");
+            // 애니메이션
+            if($("#lizzy2").css("display") != "none") {
+                $this.animate({
+                    width: per + "%"
+                });
+            }             
+            else {
+                $this.animate({
+                    width: "10%"
+                });
+            }           
+        });
+    });
+});
 
 /*
 // Create the HTML for the message
